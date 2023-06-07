@@ -1,0 +1,81 @@
+--------------------------------------------------------------------------------------------------
+Project structure:
+
+src/main/java:
+	com.config:
+		Config.properties
+		
+	com.pages:
+	    Page01_LandingPage.java
+	    Page02_ProductListPage.java
+	    Page03_ProductDetailsPage.java
+		
+			
+	com.utility:
+		Config.java
+		ConfigReader.java
+		Utility.java
+		
+src/test/java:
+	com.apphooks:
+		ApplicationHooks.java
+	
+	productdetails_stepdefinition_1
+		ProductDetails_StepDefinition_1.java
+		
+	productdetails_stepdefinition_2
+	    ProductDetails_StepDefinition_2.java
+	    
+	testrunner
+		ProductDetails_TestRunner_1.java
+		ProductDetails_TestRunner_2.java
+		
+src/main/resources:
+	ReadMe
+						
+src/test/resources:
+	features
+		ProductDetails1.feature
+		ProductDetails2.feature	
+
+drivers folder:
+	chromedriver.exe
+	
+screenshots folder:
+	file.png	
+	
+pom.xml			
+--------------------------------------------------------------------------------------------------
+Project creation sequence:
+
+Create maven project
+Add the dependencies in pom.xml
+Maven project will have 4 sections by default(if not then create them):
+	src/main/java
+	src/main/resources
+	src/test/java
+	src/test/resources
+
+Create the required packages, classes, files in them as per below sequence:
+
+Step 1 --> Create Feature file
+Step 2 --> Create Config.java
+Step 3 --> Create Config.properties
+Step 4 --> Create ConfigReader.java
+Step 5 --> Create Utility.java
+Step 6 --> Create Page01_LandingPage.java
+Step 7 --> Create Page02_ProductListPage.java
+Step 8 --> Create Page03_ProductDetailsPage.java
+Step 9 --> Create ApplicationHooks.java
+Step 10 --> Create ProductDetails_StepDefinition_1.java
+Step 11 --> Create ProductDetails_StepDefinition_2.java
+Step 12 --> Create ProductDetails_TestRunner_1.java.java
+Step 13 --> Create LoginPage_TestRunner.java
+Step 14 --> Create ProductDetails_TestRunner_2.java.java
+
+Create the drivers folder and keep driver in it
+Create the screenshots folder to keep screenshots in it
+Run the tests by using Test class(individual test class) or pom.xml or testng.xml
+
+See the reports in test-output folder(created by testng)
+See the reports in target folder(created by maven)

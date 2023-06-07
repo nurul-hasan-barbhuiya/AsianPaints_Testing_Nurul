@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="196.372" tests="3" skipped="0" failures="0" errors="0">
+<testcase classname="ProductDetails" name="Validate User navigates onto ProductList page" time="42.758">
+<system-out><![CDATA[
+Given Chrome is opened and Asianpaints app is opened........................passed
+When User searches the product..............................................passed
+And User clicks on the product..............................................passed
+Then User navigates onto the ProductList page...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="ProductDetails" name="Validate ProductDetails page UI" time="66.85">
+<system-out><![CDATA[
+Given Chrome is opened and Asianpaints app is opened........................passed
+When User searches the product..............................................passed
+And User clicks on the product..............................................passed
+Then User navigates onto the ProductList page...............................passed
+And User clicks on any listed item..........................................passed
+Then ProductDetails page is launched and fields are visible to the user.....passed
+]]></system-out>
+</testcase>
+<testcase classname="ProductDetails" name="Validate quantity field on ProductDetails page" time="86.368">
+<system-out><![CDATA[
+Given Chrome is opened and Asianpaints app is opened........................passed
+When User searches the product..............................................passed
+And User clicks on the product..............................................passed
+Then User navigates onto the ProductList page...............................passed
+And User clicks on any listed item..........................................passed
+Then ProductDetails page is launched and fields are visible to the user.....passed
+When User changes the quantity of the product...............................passed
+Then Application selects the correct quantity...............................passed
+]]></system-out>
+</testcase>
+</testsuite>
