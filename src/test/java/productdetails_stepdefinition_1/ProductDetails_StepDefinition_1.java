@@ -2,6 +2,7 @@ package productdetails_stepdefinition_1;
 
 import com.utility.Utility;
 
+
 import com.pages.Page01_LandingPage;
 import com.aventstack.extentreports.Status;
 
@@ -39,8 +40,8 @@ public class ProductDetails_StepDefinition_1 extends Utility{
 			objectMethod();
 			Utility.implicitWait();
 			Thread.sleep(4500);
-			lp.noThanksButton();
-			Thread.sleep(2500);
+			//lp.noThanksButton();
+			//Thread.sleep(2500);
 			lp.laterButton();
 			Thread.sleep(2000);
 			lp.acceptCookiesButtonValidation();
@@ -127,7 +128,7 @@ public class ProductDetails_StepDefinition_1 extends Utility{
 		
 		@Then("User clicks on any listed item")
 		public void user_clicks_on_any_listed_item() throws IOException, InterruptedException {
-			logger = report.createTest("test02");
+			logger = report.createTest("Test02");
 			logger.log(Status.INFO, "Validating user is able to click on any of the selected item");
 		    objectMethod();
 		    Utility.implicitWait();
@@ -175,7 +176,7 @@ public class ProductDetails_StepDefinition_1 extends Utility{
 	
 		@When("User changes the quantity of the product")
 		public void user_changes_the_quantity_of_the_product() throws IOException, InterruptedException {
-			logger = report.createTest("test03");
+			logger = report.createTest("Test03");
 			logger.log(Status.INFO, "Validating user is able to change the quantity of the product");
 	    		objectMethod();
 	    		Utility.implicitWait();

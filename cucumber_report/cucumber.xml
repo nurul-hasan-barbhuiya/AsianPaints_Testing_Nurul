@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="196.372" tests="3" skipped="0" failures="0" errors="0">
-<testcase classname="ProductDetails" name="Validate User navigates onto ProductList page" time="42.758">
-<system-out><![CDATA[
-Given Chrome is opened and Asianpaints app is opened........................passed
-When User searches the product..............................................passed
-And User clicks on the product..............................................passed
-Then User navigates onto the ProductList page...............................passed
-]]></system-out>
-</testcase>
-<testcase classname="ProductDetails" name="Validate ProductDetails page UI" time="66.85">
+<testsuite name="Cucumber" time="185.768" tests="4" skipped="0" failures="0" errors="0">
+<testcase classname="ProductDetails" name="Verify Pincode functionality with valid data - Example #1.1" time="47.898">
 <system-out><![CDATA[
 Given Chrome is opened and Asianpaints app is opened........................passed
 When User searches the product..............................................passed
@@ -16,9 +8,12 @@ And User clicks on the product..............................................pass
 Then User navigates onto the ProductList page...............................passed
 And User clicks on any listed item..........................................passed
 Then ProductDetails page is launched and fields are visible to the user.....passed
+When User enters Pincode from sheetname "Sheet1" and rownumber 0............passed
+And User clicks on check button.............................................passed
+Then It shows Pincode is serviceable........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="ProductDetails" name="Validate quantity field on ProductDetails page" time="86.368">
+<testcase classname="ProductDetails" name="Verify Pincode functionality with valid data - Example #1.2" time="46.934">
 <system-out><![CDATA[
 Given Chrome is opened and Asianpaints app is opened........................passed
 When User searches the product..............................................passed
@@ -26,8 +21,35 @@ And User clicks on the product..............................................pass
 Then User navigates onto the ProductList page...............................passed
 And User clicks on any listed item..........................................passed
 Then ProductDetails page is launched and fields are visible to the user.....passed
-When User changes the quantity of the product...............................passed
-Then Application selects the correct quantity...............................passed
+When User enters Pincode from sheetname "Sheet1" and rownumber 1............passed
+And User clicks on check button.............................................passed
+Then It shows Pincode is serviceable........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="ProductDetails" name="Verify Pincode functionality with invalid data - Example #1.1" time="47.257">
+<system-out><![CDATA[
+Given Chrome is opened and Asianpaints app is opened........................passed
+When User searches the product..............................................passed
+And User clicks on the product..............................................passed
+Then User navigates onto the ProductList page...............................passed
+And User clicks on any listed item..........................................passed
+Then ProductDetails page is launched and fields are visible to the user.....passed
+When User enters Pincode from sheetname "Sheet2" and rownumber 0............passed
+And User clicks on check button.............................................passed
+Then It shows Pincode is not serviceable....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="ProductDetails" name="Verify Pincode functionality with invalid data - Example #1.2" time="43.645">
+<system-out><![CDATA[
+Given Chrome is opened and Asianpaints app is opened........................passed
+When User searches the product..............................................passed
+And User clicks on the product..............................................passed
+Then User navigates onto the ProductList page...............................passed
+And User clicks on any listed item..........................................passed
+Then ProductDetails page is launched and fields are visible to the user.....passed
+When User enters Pincode from sheetname "Sheet2" and rownumber 1............passed
+And User clicks on check button.............................................passed
+Then It shows Pincode is not serviceable....................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

@@ -3,13 +3,20 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
-      <class name="testrunner.ProductDetails_TestRunner_1">
+      <class name="testrunner.ProductDetails_TestRunner_3">
         <methods>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="0 1 2"/>
+          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="0 1 3"/>
+        </methods>
+      </class> <!-- testrunner.ProductDetails_TestRunner_3 -->
+      <class name="testrunner.ProductDetails_TestRunner_2">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="2 3"/>
           <include name="tearDownClass"/>
         </methods>
-      </class> <!-- testrunner.ProductDetails_TestRunner_1 -->
+      </class> <!-- testrunner.ProductDetails_TestRunner_2 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

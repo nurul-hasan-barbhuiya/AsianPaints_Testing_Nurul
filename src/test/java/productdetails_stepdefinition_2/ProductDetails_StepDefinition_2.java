@@ -1,16 +1,18 @@
 package productdetails_stepdefinition_2;
 
+import com.utility.Utility;
+
+
+import com.pages.Page01_LandingPage;
+import com.aventstack.extentreports.Status;
+
+import com.pages.Page02_ProductListPage;
+import com.pages.Page03_ProductDetailsPage;
+
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import java.io.IOException;
-
-import com.aventstack.extentreports.Status;
-import com.pages.Page01_LandingPage;
-import com.pages.Page02_ProductListPage;
-import com.pages.Page03_ProductDetailsPage;
-import com.utility.Utility;
-
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -36,14 +38,14 @@ public class ProductDetails_StepDefinition_2 extends Utility {
 		objectMethod();
 		Utility.implicitWait();
 		Thread.sleep(4500);
-		lp.noThanksButton();
-		Thread.sleep(2500);
+		//lp.noThanksButton();
+		//Thread.sleep(2500);
 		lp.laterButton();
 		Thread.sleep(2000);
 		lp.acceptCookiesButtonValidation();
 		Thread.sleep(3000);
 		
-		
+		logger = report.createTest("Test04");
         logger.log(Status.INFO, "Validating Landing page title");
         
         String actualTitle = lp.validateLandingPageTitle();
@@ -145,7 +147,7 @@ public class ProductDetails_StepDefinition_2 extends Utility {
 	
 	@When("User enters Pincode {string}")
 	public void user_enters_pincode(String pincode) throws IOException, InterruptedException {
-		logger = report.createTest("Test04");
+		//logger = report.createTest("Test04");
 		logger.log(Status.INFO, "Validating application is accepting the correct pincodes");
 	    objectMethod();
 	    Utility.implicitWait();

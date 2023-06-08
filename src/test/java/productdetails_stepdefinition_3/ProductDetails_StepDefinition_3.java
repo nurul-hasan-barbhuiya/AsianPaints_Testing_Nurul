@@ -44,14 +44,14 @@ public class ProductDetails_StepDefinition_3 extends Utility{
 		objectMethod();
 		Utility.implicitWait();
 		Thread.sleep(4500);
-		lp.noThanksButton();
-		Thread.sleep(2500);
+		//lp.noThanksButton();
+		//Thread.sleep(2500);
 		lp.laterButton();
 		Thread.sleep(2000);
 		lp.acceptCookiesButtonValidation();
 		Thread.sleep(3000);
 		
-		logger = report.createTest("Test01");
+		logger = report.createTest("Test06");
         logger.log(Status.INFO, "Validating Landing page title");
         
         String actualTitle = lp.validateLandingPageTitle();
@@ -152,7 +152,7 @@ public class ProductDetails_StepDefinition_3 extends Utility{
 	
 	@When("User enters Pincode from sheetname {string} and rownumber {int}")
 	public void user_enters_pincode_from_sheetname_and_rownumber(String sheetName, Integer rowNumber) throws IOException, InterruptedException, InvalidFormatException {
-		logger = report.createTest("Test06");
+		//logger = report.createTest("Test06");
 		logger.log(Status.INFO, "Validating application is accepting the correct pincodes");
 		objectMethod();
 	    Utility.scroll();
