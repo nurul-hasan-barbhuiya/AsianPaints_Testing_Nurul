@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="185.768" tests="4" skipped="0" failures="0" errors="0">
-<testcase classname="ProductDetails" name="Verify Pincode functionality with valid data - Example #1.1" time="47.898">
+<testsuite name="Cucumber" time="202.848" tests="4" skipped="0" failures="0" errors="0">
+<testcase classname="ProductDetails" name="Verify Pincode functionality with valid data - Example #1.1" time="48.991">
 <system-out><![CDATA[
 Given Chrome is opened and Asianpaints app is opened........................passed
 When User searches the product..............................................passed
@@ -13,7 +13,7 @@ And User clicks on check button.............................................pass
 Then It shows Pincode is serviceable........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="ProductDetails" name="Verify Pincode functionality with valid data - Example #1.2" time="46.934">
+<testcase classname="ProductDetails" name="Verify Pincode functionality with valid data - Example #1.2" time="44.457">
 <system-out><![CDATA[
 Given Chrome is opened and Asianpaints app is opened........................passed
 When User searches the product..............................................passed
@@ -26,7 +26,7 @@ And User clicks on check button.............................................pass
 Then It shows Pincode is serviceable........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="ProductDetails" name="Verify Pincode functionality with invalid data - Example #1.1" time="47.257">
+<testcase classname="ProductDetails" name="Verify Pincode functionality with invalid data - Example #1.1" time="52.694">
 <system-out><![CDATA[
 Given Chrome is opened and Asianpaints app is opened........................passed
 When User searches the product..............................................passed
@@ -39,7 +39,7 @@ And User clicks on check button.............................................pass
 Then It shows Pincode is not serviceable....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="ProductDetails" name="Verify Pincode functionality with invalid data - Example #1.2" time="43.645">
+<testcase classname="ProductDetails" name="Verify Pincode functionality with invalid data - Example #1.2" time="56.675">
 <system-out><![CDATA[
 Given Chrome is opened and Asianpaints app is opened........................passed
 When User searches the product..............................................passed
