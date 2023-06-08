@@ -39,9 +39,9 @@ public class ProductDetails_StepDefinition_1 extends Utility{
 		public void chrome_is_opened_and_asianpaints_app_is_opened() throws IOException, InterruptedException {
 			objectMethod();
 			Utility.implicitWait();
-			Thread.sleep(4500);
-			//lp.noThanksButton();
-			//Thread.sleep(2500);
+			Thread.sleep(5000);
+			lp.noThanksButton();
+			Thread.sleep(2000);
 			lp.laterButton();
 			Thread.sleep(2000);
 			lp.acceptCookiesButtonValidation();
